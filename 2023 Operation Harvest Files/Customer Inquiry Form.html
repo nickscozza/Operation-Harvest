@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        .popup {
+            width: 400px;
+            background: #fff;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+        }
+        .popup img {
+            width: 100px;
+            margin-top: -50px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .popup h2{
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+        .popup button{
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #6fd649;
+            color: #fff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+        }
+        
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .form-container {
+                max-width: 100%;
+                padding: 0 10px;
+            }
+        }
+            
+            .form-group label,
+            .form-group input[type="text"],
+            .form-group input[type="email"],
+            .form-group textarea {
+                width: 100%;
+                display: block;
+                margin: 0;
+            }
+            
+            .form-group textarea {
+                height: 80px;
+            }
+            
+            .form-group button {
+                width: 100%;
+                .form-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+        
+    .form-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .form-links .link-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+        .form-links .link-item img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .form-links .link-item span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .form-links .link-item {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Contact Us</h1>
+        
+        <form  method="POST" onsubmit="submitForm()">
+            <div class="form-group">
+                <label for="fullname">First Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+            <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <div class="popup">
+                        <img src="artworkLinkImages\404-tick.png" alt = "">
+                        <h2>Thank You!</h2><p>Your details has been submitted successfully.</p>
+                        <button>OK</button>
+                    </div>
+            </div>
+        </form>
+        <div class="form-links">
+            <div class="link-item">
+                <a href="#">
+                    <img src="artworkLinkImages\lara scolari artwork 1.jpg" alt="Link 1">
+                </a>
+                <span>Artwork Title</span>
+            </div>
+            <div class="link-item">
+                <a href="#">
+                    <img src="artworkLinkImages\lara scolari artwork 2.jpg" alt="Link 2">
+                </a>
+                <span>Artwork Title</span>
+            </div>
+            <div class="link-item">
+                <a href="#">
+                    <img src="artworkLinkImages\lara scolari artwork 3.jpg" alt="Link 3">
+                </a>
+                <span>Artwork Title</span>
+            </div>
+            <div class="link-item">
+                <a href="#">
+                    <img src="artworkLinkImages\lara scolari artwork 4.jpg" alt="Link 4">
+                </a>
+                <span>Artwork Title</span>
+            </div>
+            <div class="link-item">
+                <a href="#">
+                    <img src="artworkLinkImages\lara scolari artwork 5.jpg" alt="Link 5">
+                </a>
+                <span><a href="https://www.google.com/">Artwork Title</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
