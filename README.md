@@ -1,2 +1,2 @@
 # Operation-Harvest
-Business Enquiry Website. Export to .csv function included.
+Business Inquiry Website. Export to .csv function included.
