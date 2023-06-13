@@ -28,6 +28,8 @@
                     <th>Contact Record ID</th>
                     <th>Enquiree Name</th>
                     <th>Enquiree Email</th>
+                    <th>Enquiree Phone Number</th>
+                    <th>Enquiree Whatsapp Number</th>
                     <th>Enquiree Notes</th>
                 </tr>
             </thead>
@@ -64,6 +66,8 @@
                      <td>$row[id]</td>
                      <td>$row[name]</td>
                      <td>$row[email]</td>
+                     <td>$row[phone]</td>
+                     <td>$row[whatsapp]</td>
                      <td>$row[notes]</td>
                      </tr>
                      ";

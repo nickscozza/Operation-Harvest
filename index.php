@@ -33,7 +33,7 @@
             ?>
     <div class="header">
 		<a href="contactList.php">
-            ack
+            back
         </a>
 		<h1>Contact Record Form</h1>
 	</div> 
@@ -50,6 +50,14 @@
             <div class="form-group">
                 <label for="name">First Name:</label>
                 <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">Whatsapp Number [if applicable]:</label>
+                <input type="text" id="whatsapp" name="whatsapp">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
